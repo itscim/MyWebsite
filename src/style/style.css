@@ -1,0 +1,5 @@
+html{ 
+    --background:#DED9D6;
+
+    background: var(--background);
+}
