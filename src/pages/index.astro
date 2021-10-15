@@ -1,5 +1,11 @@
 ---
 	import Nav from '../components/Nav.astro';
+	import Photos from '../components/Photos.astro';
+	import Footer from '../components/Footer.astro';
+	import Markdown from 'astro/components';
+
+
+
 ---
 <html lang="en">
 
@@ -9,12 +15,22 @@
 	<meta name="viewport" content="width=device-width" />
 	<title>Welcome to Astro</title>
 	<link rel="stylesheet" href="{Astro.resolve('../style/style.css')}">
+	<script src="/typetura.js"></script>
 </head>
 
 <body>
 	<Nav/>
-	<h1>Welcome to <a href="https://astro.build/">Astro</a></h1>
+	<Photos/>
+	<article class="prose">
+	<Markdown>
+	# About me
 
+	Some text goes here
+	</Markdown>
+	</article>
+	<Footer/>
+
+	
 </body>
 
 </html>

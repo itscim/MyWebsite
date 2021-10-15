@@ -1,5 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;1,400&display=swap');
+
 html{ 
     --background:#DED9D6;
-
+    --color:#000000;
+    --primary:#F6944D;
+    --font:'Montserrat', sans-serif;
+    --stroke-width:4px;
+    
     background: var(--background);
+    color: var(--color);
+    font-family: var(--font);
+}
+body{
+    margin:0 auto;
+    max-width: 60em;
+    padding:2em;
+
+}
+
+
+/* Typographic Styles */
+h1, h2, h3, h4, h5, h6 {
+    font-size:1em;
+    font-weight:inherit;
+}
+
+.page-heading,
+.prose h1{
+    --tt-key:page-heading;
+    margin:0;
+    line-height:1;
+}
+
+@keyframes page-heading{
+    0%{
+        font-size: 1rem;
+    }
+    100%{
+        font-size:3rem;
+    }
+
+}
+
+nav, 
+section,
+article,
+footer{
+    margin: 2rem 0;
 }
