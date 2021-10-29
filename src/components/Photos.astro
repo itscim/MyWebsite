@@ -1,10 +1,49 @@
+---
+// Photos go here
+// Most recent at the top
+const data = [
+	{
+	  "url": "IMG_3309.jpg",
+	  "category": "Architecture"
+	},
+	{
+	  "url": "IMG_3309.jpg",
+	  "category": "Portrait"
+	},
+	{
+	  "url": "IMG_3309.jpg",
+	  "category": "Portrait"
+	},
+];
+
+// Define props
+const { heading = 'Recent Photos', number = 4, category = null } = Astro.props; Astro
+// Create photo array with parameters from props
+let photos = []
+
+// Push the photos you want to select into the array
+let i = 0;
+data.forEach(photo => {
+	if(i < number) {
+		if(category) {
+			if(category === photo.category) {
+				photos.push(photo);
+				i = i + 1;
+			}
+		} else {
+			photos.push(photo);
+			i = i + 1;
+		}
+	}
+});
+---
+
 <section class="photos">
-    <h1 class="page-heading">Recent Photos</h1>
+    <h1 class="page-heading">{heading}</h1>
     <div class="photos-gallery">
-        <img alt="Cheyenne in front of tree" src="/images/20210910145015_IMG_7501.jpg"/>
-        <img alt="Cheyenne in front of tree" src="/images/20210910145015_IMG_7501.jpg"/>
-        <img alt="Cheyenne in front of tree" src="/images/20210910145015_IMG_7501.jpg"/>
-        <img alt="Cheyenne in front of tree" src="/images/20210910145015_IMG_7501.jpg"/>
+			{photos.map((photo) => (
+				<img src={`/images/${photo.url}`} alt=" ">
+			))}
     </div>
 </section>
 
