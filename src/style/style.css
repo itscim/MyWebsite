@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;1,400&display=swap');
 
 html{ 
-    --background:#DED9D6;
+    --background:#5DADE2;
     --color:#000000;
-    --primary:#F6944D;
-    --font:'Montserrat', sans-serif;
+    --primary:#FF8A33;
+    --font:'Montserrat', serif;
     --stroke-width:4px;
     
     background: var(--background);

@@ -3,12 +3,12 @@
 // Most recent at the top
 const data = [
 	{
-	  "url": "IMG_3309.jpg",
+	  "url": "IMG_3826.jpg",
 	  "category": "Architecture"
 	},
 	{
-	  "url": "IMG_3309.jpg",
-	  "category": "Portrait"
+	  "url": "PSX_20180608_185048.jpg",
+	  "category": "Nature"
 	},
 	{
 	  "url": "IMG_3309.jpg",
@@ -51,12 +51,13 @@ data.forEach(photo => {
 img{
     width: 100%;
 	aspect-ratio: 1;
-	object-fit: contain;
+	object-fit: contain ;
 }
 
 .photos-gallery{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 5fr));
     gap: 1rem;
 }
+
 </style>
