@@ -3,9 +3,9 @@
 
 html{ 
     --background:#5DADE2;
-    --color:#000000;
+    --color:#00000;
     --primary:#FF8A33;
-    --font:'Montserrat', serif;
+    --font:'Montserrat', sans-serif;
     --stroke-width:4px;
     
     background: var(--background);
@@ -23,7 +23,7 @@ body{
 /* Typographic Styles */
 h1, h2, h3, h4, h5, h6 {
     font-size:1em;
-    font-weight:inherit;
+    font-weight:inhei;
 }
 
 .page-heading,
@@ -48,4 +48,8 @@ section,
 article,
 footer{
     margin: 2rem 0;
+}
+
+.Intro{
+    font-weight: 700;
 }
