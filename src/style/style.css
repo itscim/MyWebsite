@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
 
 html{ 
-    --background:#f3611d;
-    --color:#00000;
-    --primary:#ffff;
+    --background:black;
+    --color:white;
+    --primary:#fa5c13;
     --font:'Tenor Sans', sans-serif;
     --stroke-width:4px;
     
