@@ -1,0 +1,19 @@
+---
+    const { src = null } = Astro.props; Astro
+---
+<div>
+<img src={src} alt=" "/>
+<div class="lightbox">
+<img src={src} alt=" "/>
+</div>
+</div>
+<style>
+img{
+    width: 100%;
+	aspect-ratio: 1;
+	object-fit: contain;
+}
+.lightbox{
+    display:none;
+}
+</style>

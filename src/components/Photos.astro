@@ -1,4 +1,5 @@
 ---
+	import Photo from '../components/Photo.astro';
 // Photos go here
 // Most recent at the top
 const data = [
@@ -111,17 +112,12 @@ data.forEach(photo => {
     <h1 class="page-heading">{heading}</h1>
     <div class="photos-gallery">
 			{photos.map((photo) => (
-				<img src={`/images/${photo.url}`} alt=" ">
+				<Photo src={`/images/${photo.url}`}/>
 			))}
     </div>
 </section>
 
 <style>
-img{
-    width: 100%;
-	aspect-ratio: 1;
-	object-fit: contain ;
-}
 
 .photos-gallery{
     display: grid;
