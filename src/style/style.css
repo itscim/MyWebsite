@@ -1,11 +1,11 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 html{ 
-    --background:black;
-    --color:white;
-    --primary:#fa5c13;
-    --font:'Tenor Sans', sans-serif;
+    --background:hsla(0, 57%, 65%, 0.897);
+    --color:rgb(255, 255, 255);
+    --primary:#97ff41;
+    --font:'Shrikhand';
     --stroke-width:4px;
     
     background: var(--background);
@@ -22,7 +22,7 @@ body{
 
 /* Typographic Styles */
 h1, h2, h3, h4, h5, h6 {
-    font-size:3em;
+    font-size:4rem;
     font-weight:inherit;
 }
 
