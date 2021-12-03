@@ -1,0 +1,60 @@
+---
+	import StoreItem from '../components/StoreItem.astro';
+// Photos go here
+// Most recent at the top
+const data = [
+	{
+	  "url": "IMG_3826.jpg",
+	  "category": "Nature",
+	  "Society6":"https://society6.com/product/happy-mushrooms5113931_print?sku=s6-20257079p4a1v45"
+	},
+	{
+	  "url": "IMG_3826.jpg",
+	  "category": "Nature",
+	  "Society6":"https://society6.com/product/happy-mushrooms5113931_print?sku=s6-20257079p4a1v45"
+	},
+	
+	
+];
+
+// Define props
+const { heading = 'Recent Photos', number = 4, category = null } = Astro.props; Astro
+// Create photo array with parameters from props
+let photos = []
+
+// Push the photos you want to select into the array
+let i = 0;
+data.forEach(photo => {
+	if(i < number) {
+		if(category) {
+			if(category === photo.category) {
+				photos.push(photo);
+				i = i + 1;
+			}
+		} else {
+			photos.push(photo);
+			i = i + 1;
+		}
+	}
+});
+---
+
+<section class="photos">
+    <h1 class="page-heading">{heading}</h1>
+    <div class="photos-gallery">
+			{photos.map((photo) => (
+				<StoreItem src={`/images/${photo.url}`} Society6={photo.Society6} Etsy={photo.Etsy}/>
+			))}
+    </div>
+</section>
+
+<style>
+
+
+.photos-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 5fr));
+    gap: 1rem;
+}
+
+</style>
