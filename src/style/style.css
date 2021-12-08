@@ -1,11 +1,15 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family:'Funkford' ;
+    src: url('/funkford-regular.woff2');
+}
 html{ 
-    --background:hsla(0, 57%, 65%, 0.897);
+    --background:hsla(239, 79%, 56%, 0.897);
     --color:rgb(255, 255, 255);
     --primary:#e3f308;
-    --font:'Shrikhand';
+    --font:'Libre Franklin';
+    --headline:'Funkford';
     --stroke-width:4px;
     
     background: var(--background);
@@ -29,6 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 .page-heading,
 .prose h1{
     --tt-key:page-heading;
+    font-family:var(--headline);
     margin:0;
     line-height:1;
 }
@@ -38,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 1rem;
     }
     100%{
-        font-size:3rem;
+        font-size:6rem;
     }
 
 }
