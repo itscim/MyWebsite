@@ -10,4 +10,12 @@
 export default /** @type {import('astro').AstroUserConfig} */ ({
   // Comment out "renderers: []" to enable Astro's default component support.
   renderers: [],
+  markdownOptions: {
+    render: [
+      "parser-name", // or import('parser-name') or (contents) => {...}
+      {
+        // options
+      },
+    ],
+  },
 });
