@@ -1,9 +1,18 @@
 ---
-    const { src = null, Society6 = null, Etsy = null } = Astro.props; Astro
+const { src = null, Society6 = null, Etsy = null } = Astro.props; Astro
+
+let links = '';
+if(Etsy) {
+    links = `<a href=${Etsy}>Buy on Etsy</a>`;
+}
+if(Society6) {
+    links = links + `<a href=${Society6}>Buy on Society6</a>`;
+}
+console.log(links);
 ---
 <div class="Photo" onclick="toggleLightbox(this)">
 <img src={src} alt=" "/>
-<a href={Society6}>Buy on Society6</a>
+{links}
 <div class="lightbox">
 <img src={src} alt=" "/>
 </div>
@@ -45,9 +54,6 @@ position: fixed;
 z-index: 10;
 bottom:1rem;
 right:1rem;
-}
-a{
-    color:white;
 }
 </style>
 <script>
