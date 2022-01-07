@@ -40,8 +40,7 @@ data.forEach(photo => {
 ---
 
 <section class="photos">
-    <h1 class="page-heading">{heading}</h1>
-    <div class="photos-gallery">
+        <div class="photos-gallery">
 			{photos.map((photo) => (
 				<StoreItem src={`/images/${photo.url}`} Society6={photo.Society6} Etsy={photo.Etsy}/>
 			))}
