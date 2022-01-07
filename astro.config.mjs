@@ -5,18 +5,9 @@
 // VSCode and other TypeScript-enabled text editors will provide auto-completion,
 // helpful tooltips, and warnings if your exported object is invalid.
 // You can disable this by removing "@ts-check" and `@type` comments below.
-import { imagetools } from "vite-imagetools";
-// import { imagetools } from "./astro-imagetools/index.mjs";
+
 // @ts-check
 export default /** @type {import('astro').AstroUserConfig} */ ({
   // Comment out "renderers: []" to enable Astro's default component support.
-  // renderers: [],
-  vite: {
-    plugins: [imagetools()],
-  },
-  image: {
-    formats: ["webp", "png", "jpg", "jpeg", "gif"],
-  },
+  renderers: [],
 });
-
- 

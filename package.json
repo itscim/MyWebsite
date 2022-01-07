@@ -9,10 +9,6 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "astro": "^0.21.11",
-    "imagetools-core": "^3.0.1",
-    "potrace": "^2.1.8",
-    "sharp": "^0.29.3",
-    "vite-imagetools": "^4.0.1"
+    "astro": "^0.21.11"
   }
 }
