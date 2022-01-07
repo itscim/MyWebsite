@@ -20,6 +20,8 @@ body{
     margin:0 auto;
     max-width: 60em;
     padding:2em;
+    font:inherit;
+    color:inherit;
 
 }
 
