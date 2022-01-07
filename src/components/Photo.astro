@@ -1,9 +1,9 @@
 ---
     const { src = null } = Astro.props; Astro
-    import Image from "../components/Photo.astro"
+    import Photo from "../components/Photo.astro"
 ---
 <div class="Photo" onclick="toggleLightbox(this)">
-<Image src={src} alt=" " />
+<Photo src={src} alt=" " />
 <div class="lightbox">
 </div>
 </div>
