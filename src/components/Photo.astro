@@ -1,12 +1,13 @@
 ---
     const { src = null } = Astro.props; Astro
-    import Image from "../components/Photo.astro"
 ---
 <div class="Photo" onclick="toggleLightbox(this)">
-<Image src={src} alt=" " />
-<div class="lightbox">
+    <img src={src} alt=" " />
+    <div class="lightbox">
+        <img src={src} alt=" " />
+    </div>
 </div>
-</div>
+
 <style>
 img{
     filter:drop-shadow(0 0.5rem 2rem hsl(207, 60%, 10%));
