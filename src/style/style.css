@@ -5,9 +5,9 @@
     src: url('/funkford-regular.woff2');
 }
 html{ 
-    --background:hsla(239, 79%, 56%, 0.897);
+    --background:hsl(239, 100%, 66%);
     --color:rgb(255, 255, 255);
-    --primary:#e3f308;
+    --primary:#c0f308;
     --font:'Libre Franklin';
     --headline:'Funkford';
     --stroke-width:4px;
