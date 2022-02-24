@@ -1,14 +1,14 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
 @font-face {
     font-family:'Funkford' ;
     src: url('/funkford-regular.woff2');
 }
 html{ 
-    --background:hsl(239, 100%, 66%);
+    --background:hsl(212, 100%, 50%);
     --color:rgb(255, 255, 255);
-    --primary:#c0f308;
-    --font:'Libre Franklin';
+    --primary:#4bd45e;
+    --font:'PT Mono', monospace;
     --headline:'Funkford';
     --stroke-width:4px;
     
@@ -19,7 +19,7 @@ html{
 body{
     margin:0 auto;
     max-width: 60em;
-    padding:2em;
+    padding:4em;
     font:inherit;
     color:inherit;
 
@@ -31,7 +31,7 @@ a{
 
 /* Typographic Styles */
 h1, h2, h3, h4, h5, h6 {
-    font-size:4rem;
+    font-size:6rem;
     font-weight:inherit;
 }
 
