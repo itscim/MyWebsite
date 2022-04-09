@@ -5,10 +5,10 @@
     src: url('/funkford-regular.woff2');
 }
 html{ 
-    --background:hsl(212, 100%, 50%);
+    --background:hsl(212, 92%, 61%);
     --color:rgb(255, 255, 255);
     --primary:#4bd45e;
-    --font:'PT Mono', monospace;
+    --font:'Georgia', monospace;
     --headline:'Funkford';
     --stroke-width:4px;
     
